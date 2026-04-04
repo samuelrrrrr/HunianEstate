@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hunian — Find Your Perfect Property</title>
+  <link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <!-- ✏️ EDIT: Ganti teks logo di bawah -->
+      <a href="#beranda" class="logo">Hunian</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#beranda" class="nav-link active">Beranda</a>
+        <a href="#tentang" class="nav-link">Tentang</a>
+        <a href="#spesifikasi" class="nav-link">Spesifikasi</a>
+        <a href="#harga" class="nav-link">Harga</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+      </nav>
+
+      <a href="#kontak" class="btn-primary nav-cta">Hubungi Kami</a>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO — #beranda
+  ============================================================ -->
+  <section class="hero" id="beranda">
+    <!-- ✏️ EDIT: Ganti URL gambar hero di bawah (style="background-image:...") -->
+    <div class="hero-bg" style="background-image: url('images/hero-bg.jpg')"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge reveal">
+        <!-- ✏️ EDIT: Ganti angka & teks badge -->
+        <div class="badge-avatars">
+          <img src="images/avatar1.jpg" alt="User 1" />
+          <img src="images/avatar2.jpg" alt="User 2" />
+          <img src="images/avatar3.jpg" alt="User 3" />
+        </div>
+        <div>
+          <strong>55K+ Pelanggan</strong>
+          <span>Menemukan properti impian</span>
+        </div>
+      </div>
+
+      <!-- ✏️ EDIT: Judul utama -->
+      <h1 class="hero-title reveal delay-1">
+        Temukan Properti<br />Impian Anda
+      </h1>
+
+      <!-- ✏️ EDIT: Subjudul / deskripsi singkat -->
+      <p class="hero-sub reveal delay-2">
+        Beli, jual, atau sewa properti di seluruh Indonesia. Kami membantu Anda menemukan tempat sempurna — cepat, mudah, dan aman.
+      </p>
+
+
+    <!-- Decorative shapes -->
+    <div class="hero-shape"></div>
+  </section>
+
+  <!-- ============================================================
+       STATS BAR
+  ============================================================ -->
+  <section class="stats-bar">
+    <div class="container stats-inner">
+      <!-- ✏️ EDIT: Angka & label statistik -->
+      <div class="stat reveal">
+        <span class="stat-num" data-target="1200">0</span><span>+</span>
+        <p>Properti Tersedia</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat reveal delay-1">
+        <span class="stat-num" data-target="55000">0</span><span>+</span>
+        <p>Pelanggan Puas</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat reveal delay-2">
+        <span class="stat-num" data-target="18">0</span><span></span>
+        <p>Kota Terjangkau</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat reveal delay-3">
+        <span class="stat-num" data-target="98">0</span><span>%</span>
+        <p>Tingkat Kepuasan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       NEW LISTINGS
+  ============================================================ -->
+  <section class="listings section" id="listings">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Listing Terbaru</h2>
+        <a href="#harga" class="btn-outline">Lihat Semua</a>
+      </div>
+
+      <div class="listings-grid">
+        <!-- ✏️ EDIT: Kartu listing — salin/hapus blok .listing-card untuk tambah properti -->
+
+        <div class="listing-card featured reveal delay-1">
+          <!-- ✏️ EDIT: Ganti src gambar -->
+          <img src="images/property1.jpg" alt="The New Spring Villa" class="card-img" />
+          <div class="card-body">
+            <div class="card-top">
+              <span class="card-badge">Dijual</span>
+              <button class="wishlist-btn" aria-label="Simpan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <!-- ✏️ EDIT: Nama, lokasi, harga properti -->
+            <h3 class="card-title">The New Spring Villa</h3>
+            <p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Kamawa City</p>
+            <div class="card-footer">
+              <span class="card-price">Rp 4,55 M</span>
+              <div class="card-specs">
+                <span>🛏 3 KT</span>
+                <span>🚿 2 KM</span>
+                <span>📐 180 m²</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="listing-card dark reveal delay-2">
+          <img src="images/property2.jpg" alt="The River Side" class="card-img" />
+          <div class="card-body">
+            <div class="card-top">
+              <span class="card-badge">Dijual</span>
+              <button class="wishlist-btn" aria-label="Simpan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <h3 class="card-title">The River Side</h3>
+            <p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Northern Satora</p>
+            <div class="card-footer">
+              <span class="card-price">Rp 4,95 M</span>
+              <div class="card-specs">
+                <span>🛏 4 KT</span>
+                <span>🚿 3 KM</span>
+                <span>📐 240 m²</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="listing-card reveal delay-3">
+          <img src="images/property3.jpg" alt="Lily Residence" class="card-img" />
+          <div class="card-body">
+            <div class="card-top">
+              <span class="card-badge sewa">Disewa</span>
+              <button class="wishlist-btn" aria-label="Simpan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <h3 class="card-title">Lily Residence</h3>
+            <p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> South Harbana</p>
+            <div class="card-footer">
+              <span class="card-price">Rp 4,70 M</span>
+              <div class="card-specs">
+                <span>🛏 3 KT</span>
+                <span>🚿 2 KM</span>
+                <span>📐 160 m²</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TENTANG — #tentang
+  ============================================================ -->
+  <section class="about section" id="tentang">
+    <div class="container about-grid">
+      <div class="about-images reveal">
+        <!-- ✏️ EDIT: Ganti src gambar tentang -->
+        <img src="images/about-main.jpg" alt="About Kala" class="about-main-img" />
+        <div class="about-float-card">
+          <div class="float-icon">🏆</div>
+          <!-- ✏️ EDIT: Penghargaan/pencapaian -->
+          <strong>Agen Terbaik 2024</strong>
+          <span>Penghargaan Properti Nasional</span>
+        </div>
+      </div>
+      <div class="about-text reveal delay-2">
+        <p class="section-eyebrow">Tentang Kami</p>
+        <!-- ✏️ EDIT: Judul & deskripsi tentang perusahaan -->
+        <h2 class="section-title">Mitra Terpercaya dalam Dunia Properti</h2>
+        <p class="body-text">
+          Kala hadir sejak 2010 dengan misi sederhana: membantu setiap orang menemukan rumah yang tepat dengan cara yang lebih mudah dan transparan. Kami menghubungkan pembeli, penjual, dan penyewa di seluruh Indonesia melalui platform digital yang andal.
+        </p>
+        <p class="body-text">
+          Tim kami terdiri dari para profesional properti berpengalaman yang siap memandu Anda dari pencarian hingga serah terima kunci.
+        </p>
+        <div class="about-features">
+          <!-- ✏️ EDIT: Fitur/keunggulan — tambah atau hapus item -->
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div>
+              <strong>Verifikasi Properti</strong>
+              <p>Setiap listing telah diverifikasi langsung oleh tim kami.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div>
+              <strong>Proses Transparan</strong>
+              <p>Tidak ada biaya tersembunyi, semua terbuka dari awal.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div>
+              <strong>Dukungan 24/7</strong>
+              <p>Tim kami siap membantu Anda kapan saja.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#kontak" class="btn-primary">Hubungi Kami</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SPESIFIKASI — #spesifikasi
+  ============================================================ -->
+  <section class="specs section" id="spesifikasi">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <p class="section-eyebrow">Spesifikasi</p>
+          <!-- ✏️ EDIT: Judul spesifikasi -->
+          <h2 class="section-title">Detail Lengkap Properti</h2>
+        </div>
+      </div>
+
+      <!-- SPEC TABS -->
+      <div class="spec-tabs reveal">
+        <!-- ✏️ EDIT: Ganti nama properti di tab -->
+        <button class="spec-tab active" data-spec="villa">Spring Villa</button>
+        <button class="spec-tab" data-spec="riverside">River Side</button>
+        <button class="spec-tab" data-spec="lily">Lily Residence</button>
+      </div>
+
+      <!-- ✏️ EDIT: Ubah isi spesifikasi per properti di bawah -->
+
+      <div class="spec-panel active" id="spec-villa">
+        <div class="spec-grid">
+          <div class="spec-image reveal">
+            <img src="images/spec-villa.jpg" alt="Spring Villa" />
+            <div class="spec-tag">Spring Villa</div>
+          </div>
+          <div class="spec-details reveal delay-2">
+            <h3>The New Spring Villa</h3>
+            <p class="spec-loc">📍 Kamawa City, Jakarta Selatan</p>
+            <div class="spec-list">
+              <div class="spec-row"><span>Luas Tanah</span><strong>250 m²</strong></div>
+              <div class="spec-row"><span>Luas Bangunan</span><strong>180 m²</strong></div>
+              <div class="spec-row"><span>Kamar Tidur</span><strong>3 Kamar</strong></div>
+              <div class="spec-row"><span>Kamar Mandi</span><strong>2 Kamar</strong></div>
+              <div class="spec-row"><span>Garasi</span><strong>2 Mobil</strong></div>
+              <div class="spec-row"><span>Sertifikat</span><strong>SHM</strong></div>
+              <div class="spec-row"><span>Listrik</span><strong>2.200 Watt</strong></div>
+              <div class="spec-row"><span>Air</span><strong>PDAM + Sumur</strong></div>
+              <div class="spec-row"><span>Kondisi</span><strong>Baru</strong></div>
+            </div>
+            <div class="spec-amenities">
+              <span>🏊 Kolam Renang</span>
+              <span>🌿 Taman</span>
+              <span>🔒 Keamanan 24 Jam</span>
+              <span>🏋️ Gym</span>
+            </div>
+            <a href="#harga" class="btn-primary">Lihat Harga</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="spec-panel" id="spec-riverside">
+        <div class="spec-grid">
+          <div class="spec-image reveal">
+            <img src="images/spec-riverside.jpg" alt="River Side" />
+            <div class="spec-tag">River Side</div>
+          </div>
+          <div class="spec-details reveal delay-2">
+            <h3>The River Side</h3>
+            <p class="spec-loc">📍 Northern Satora, Tangerang</p>
+            <div class="spec-list">
+              <div class="spec-row"><span>Luas Tanah</span><strong>320 m²</strong></div>
+              <div class="spec-row"><span>Luas Bangunan</span><strong>240 m²</strong></div>
+              <div class="spec-row"><span>Kamar Tidur</span><strong>4 Kamar</strong></div>
+              <div class="spec-row"><span>Kamar Mandi</span><strong>3 Kamar</strong></div>
+              <div class="spec-row"><span>Garasi</span><strong>3 Mobil</strong></div>
+              <div class="spec-row"><span>Sertifikat</span><strong>SHM</strong></div>
+              <div class="spec-row"><span>Listrik</span><strong>3.500 Watt</strong></div>
+              <div class="spec-row"><span>Air</span><strong>PDAM</strong></div>
+              <div class="spec-row"><span>Kondisi</span><strong>Baru</strong></div>
+            </div>
+            <div class="spec-amenities">
+              <span>🏊 Kolam Renang</span>
+              <span>🌿 Taman Luas</span>
+              <span>🔒 Keamanan 24 Jam</span>
+              <span>🚣 Akses Sungai</span>
+            </div>
+            <a href="#harga" class="btn-primary">Lihat Harga</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="spec-panel" id="spec-lily">
+        <div class="spec-grid">
+          <div class="spec-image reveal">
+            <img src="images/spec-lily.jpg" alt="Lily Residence" />
+            <div class="spec-tag">Lily Residence</div>
+          </div>
+          <div class="spec-details reveal delay-2">
+            <h3>Lily Residence</h3>
+            <p class="spec-loc">📍 South Harbana, Bekasi</p>
+            <div class="spec-list">
+              <div class="spec-row"><span>Luas Tanah</span><strong>200 m²</strong></div>
+              <div class="spec-row"><span>Luas Bangunan</span><strong>160 m²</strong></div>
+              <div class="spec-row"><span>Kamar Tidur</span><strong>3 Kamar</strong></div>
+              <div class="spec-row"><span>Kamar Mandi</span><strong>2 Kamar</strong></div>
+              <div class="spec-row"><span>Garasi</span><strong>1 Mobil</strong></div>
+              <div class="spec-row"><span>Sertifikat</span><strong>SHM</strong></div>
+              <div class="spec-row"><span>Listrik</span><strong>2.200 Watt</strong></div>
+              <div class="spec-row"><span>Air</span><strong>PDAM</strong></div>
+              <div class="spec-row"><span>Kondisi</span><strong>Baru</strong></div>
+            </div>
+            <div class="spec-amenities">
+              <span>🌿 Taman</span>
+              <span>🔒 Keamanan 24 Jam</span>
+              <span>🏫 Dekat Sekolah</span>
+              <span>🛒 Dekat Mal</span>
+            </div>
+            <a href="#harga" class="btn-primary">Lihat Harga</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       HARGA — #harga
+  ============================================================ -->
+  <section class="pricing section" id="harga">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <p class="section-eyebrow">Harga</p>
+          <h2 class="section-title">Daftar Harga Properti</h2>
+        </div>
+        <div class="price-tabs">
+          <button class="tab active" data-ptab="beli">Beli</button>
+          <button class="tab" data-ptab="sewa">Sewa</button>
+        </div>
+      </div>
+
+      <!-- ✏️ EDIT: Kartu harga — salin/hapus blok .price-card -->
+      <div class="price-grid" id="price-beli">
+
+        <div class="price-card reveal delay-1">
+          <div class="price-img-wrap">
+            <img src="images/property3.jpg" alt="Lily Residence" />
+            <span class="price-badge">Populer</span>
+          </div>
+          <div class="price-body">
+            <!-- ✏️ EDIT: Nama, lokasi, harga -->
+            <h3>Lily Residence</h3>
+            <p class="price-loc">📍 South Harbana</p>
+            <div class="price-num">Rp 4,70 M</div>
+            <ul class="price-features">
+              <li>✓ 3 Kamar Tidur</li>
+              <li>✓ 2 Kamar Mandi</li>
+              <li>✓ 160 m² Bangunan</li>
+              <li>✓ Sertifikat SHM</li>
+              <li>✓ Garasi 1 Mobil</li>
+            </ul>
+            <a href="#kontak" class="btn-primary full-w">Hubungi Agen</a>
+          </div>
+        </div>
+
+        <div class="price-card featured reveal delay-2">
+          <div class="price-img-wrap">
+            <img src="images/property1.jpg" alt="Spring Villa" />
+            <span class="price-badge yellow">Terbaik</span>
+          </div>
+          <div class="price-body">
+            <h3>The New Spring Villa</h3>
+            <p class="price-loc">📍 Kamawa City</p>
+            <div class="price-num accent">Rp 4,55 M</div>
+            <ul class="price-features">
+              <li>✓ 3 Kamar Tidur</li>
+              <li>✓ 2 Kamar Mandi</li>
+              <li>✓ 180 m² Bangunan</li>
+              <li>✓ Kolam Renang Pribadi</li>
+              <li>✓ Garasi 2 Mobil</li>
+            </ul>
+            <a href="#kontak" class="btn-primary full-w">Hubungi Agen</a>
+          </div>
+        </div>
+
+        <div class="price-card reveal delay-3">
+          <div class="price-img-wrap">
+            <img src="images/property2.jpg" alt="The River Side" />
+            <span class="price-badge">Premium</span>
+          </div>
+          <div class="price-body">
+            <h3>The River Side</h3>
+            <p class="price-loc">📍 Northern Satora</p>
+            <div class="price-num">Rp 4,95 M</div>
+            <ul class="price-features">
+              <li>✓ 4 Kamar Tidur</li>
+              <li>✓ 3 Kamar Mandi</li>
+              <li>✓ 240 m² Bangunan</li>
+              <li>✓ Akses Sungai</li>
+              <li>✓ Garasi 3 Mobil</li>
+            </ul>
+            <a href="#kontak" class="btn-primary full-w">Hubungi Agen</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="price-grid hidden" id="price-sewa">
+        <div class="price-card reveal delay-1">
+          <div class="price-img-wrap">
+            <img src="images/property3.jpg" alt="Lily Residence" />
+          </div>
+          <div class="price-body">
+            <h3>Lily Residence</h3>
+            <p class="price-loc">📍 South Harbana</p>
+            <!-- ✏️ EDIT: Harga sewa -->
+            <div class="price-num">Rp 25 Jt<span class="per">/tahun</span></div>
+            <ul class="price-features">
+              <li>✓ 3 Kamar Tidur</li>
+              <li>✓ 2 Kamar Mandi</li>
+              <li>✓ 160 m² Bangunan</li>
+              <li>✓ Kontrak Min. 1 Tahun</li>
+            </ul>
+            <a href="#kontak" class="btn-primary full-w">Hubungi Agen</a>
+          </div>
+        </div>
+        <div class="price-card reveal delay-2">
+          <div class="price-img-wrap">
+            <img src="images/property1.jpg" alt="Spring Villa" />
+            <span class="price-badge yellow">Terbaik</span>
+          </div>
+          <div class="price-body">
+            <h3>The New Spring Villa</h3>
+            <p class="price-loc">📍 Kamawa City</p>
+            <div class="price-num accent">Rp 35 Jt<span class="per">/tahun</span></div>
+            <ul class="price-features">
+              <li>✓ 3 Kamar Tidur</li>
+              <li>✓ 2 Kamar Mandi</li>
+              <li>✓ Kolam Renang Pribadi</li>
+              <li>✓ Kontrak Min. 1 Tahun</li>
+            </ul>
+            <a href="#kontak" class="btn-primary full-w">Hubungi Agen</a>
+          </div>
+        </div>
+        <div class="price-card reveal delay-3">
+          <div class="price-img-wrap">
+            <img src="images/property2.jpg" alt="The River Side" />
+          </div>
+          <div class="price-body">
+            <h3>The River Side</h3>
+            <p class="price-loc">📍 Northern Satora</p>
+            <div class="price-num">Rp 45 Jt<span class="per">/tahun</span></div>
+            <ul class="price-features">
+              <li>✓ 4 Kamar Tidur</li>
+              <li>✓ 3 Kamar Mandi</li>
+              <li>✓ Akses Sungai</li>
+              <li>✓ Kontrak Min. 1 Tahun</li>
+            </ul>
+            <a href="#kontak" class="btn-primary full-w">Hubungi Agen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIAL
+  ============================================================ -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <p class="section-eyebrow">Testimoni</p>
+          <h2 class="section-title">Apa Kata Pelanggan Kami</h2>
+        </div>
+      </div>
+      <div class="testi-slider" id="testiSlider">
+        <!-- ✏️ EDIT: Testimoni — salin/hapus blok .testi-card -->
+        <div class="testi-card reveal delay-1">
+          <div class="stars">★★★★★</div>
+          <p>"Proses pembelian sangat mudah dan transparan. Tim Kala sangat membantu dari awal hingga serah terima kunci. Sangat direkomendasikan!"</p>
+          <div class="testi-user">
+            <!-- ✏️ EDIT: Foto & nama pelanggan -->
+            <img src="images/avatar1.jpg" alt="Budi" />
+            <div>
+              <strong>Budi Santoso</strong>
+              <span>Pembeli, Jakarta</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal delay-2">
+          <div class="stars">★★★★★</div>
+          <p>"Listing properti lengkap dan foto-fotonya sesuai kondisi nyata. Saya berhasil menemukan rumah impian dalam waktu 2 minggu!"</p>
+          <div class="testi-user">
+            <img src="images/avatar2.jpg" alt="Sari" />
+            <div>
+              <strong>Sari Dewi</strong>
+              <span>Penyewa, Surabaya</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal delay-3">
+          <div class="stars">★★★★★</div>
+          <p>"Agen Kala sangat profesional dan responsif. Properti yang saya jual laku dalam waktu kurang dari sebulan!"</p>
+          <div class="testi-user">
+            <img src="images/avatar3.jpg" alt="Ahmad" />
+            <div>
+              <strong>Ahmad Fauzi</strong>
+              <span>Penjual, Bandung</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       KONTAK — #kontak
+  ============================================================ -->
+  <section class="contact section" id="kontak">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <p class="section-eyebrow">Kontak</p>
+        <h2 class="section-title">Hubungi Kami</h2>
+        <p class="body-text">Punya pertanyaan atau ingin konsultasi properti? Tim kami siap membantu Anda kapan saja.</p>
+
+        <!-- ✏️ EDIT: Info kontak perusahaan -->
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong>Alamat Kantor</strong>
+              <p>Jl. Sudirman No. 88, Jakarta Selatan, 12920</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <strong>Telepon</strong>
+              <!-- ✏️ EDIT: Nomor telepon -->
+              <p><a href="tel:+628001234567">+62 800 1234 567</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <!-- ✏️ EDIT: Alamat email -->
+              <p><a href="mailto:halo@kala.id">halo@kala.id</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <strong>Jam Operasional</strong>
+              <!-- ✏️ EDIT: Jam operasional -->
+              <p>Senin – Sabtu: 08.00 – 18.00 WIB</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ✏️ EDIT: Link media sosial -->
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- FORM KONTAK -->
+      <div class="contact-form reveal delay-2">
+        <h3>Kirim Pesan</h3>
+        <!-- ✏️ EDIT: Untuk menghubungkan form ke backend/email, ubah action di bawah atau integrasikan dengan Formspree / EmailJS -->
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Nama Anda" id="form-name" />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="email@anda.com" id="form-email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Nomor WhatsApp</label>
+          <input type="tel" placeholder="+62 8xx xxxx xxxx" id="form-wa" />
+        </div>
+        <div class="form-group">
+          <label>Properti yang Diminati</label>
+          <select id="form-prop">
+            <option value="">Pilih Properti</option>
+            <option>The New Spring Villa</option>
+            <option>The River Side</option>
+            <option>Lily Residence</option>
+            <option>Lainnya</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Pesan</label>
+          <textarea rows="4" placeholder="Tuliskan pertanyaan atau permintaan Anda..." id="form-msg"></textarea>
+        </div>
+        <button class="btn-primary full-w" id="send-btn" onclick="handleFormSubmit()">Kirim Pesan</button>
+        <p class="form-note" id="form-note"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <!-- ✏️ EDIT: Logo & deskripsi footer -->
+        <a href="#beranda" class="logo">Kala</a>
+        <p>Mitra terpercaya untuk properti impian Anda di seluruh Indonesia.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="social-btn" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#spesifikasi">Spesifikasi</a></li>
+          <li><a href="#harga">Harga</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Properti</h4>
+        <!-- ✏️ EDIT: Daftar tipe properti -->
+        <ul>
+          <li><a href="#harga">Rumah Dijual</a></li>
+          <li><a href="#harga">Apartemen</a></li>
+          <li><a href="#harga">Villa</a></li>
+          <li><a href="#harga">Ruko</a></li>
+          <li><a href="#harga">Kavling</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Kontak</h4>
+        <!-- ✏️ EDIT: Info kontak footer -->
+        <ul>
+          <li>📍 Jl. Sudirman No. 88, Jakarta</li>
+          <li>📞 +62 800 1234 567</li>
+          <li>✉️ halo@kala.id</li>
+        </ul>
+      </div>
+    </div>
+    <!-- ✏️ EDIT: Tahun & nama perusahaan -->
+    <div class="footer-bottom">
+      <p>© 2025 Kala Real Estate. Seluruh hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
