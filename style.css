@@ -1,23 +1,16 @@
-/* ============================================================
-   KALA REAL ESTATE — style.css
-   ✏️ EDIT: Warna utama ada di :root di bawah
-   ============================================================ */
 
-/* ── ROOT VARIABLES ── */
 :root {
-  /* ✏️ EDIT: Ubah warna brand di sini */
-  --teal:        #2b6475;   /* Warna hero / navbar scroll */
-  --teal-dark:   #1d4a58;   /* Hover gelap */
-  --teal-light:  #3a7f94;   /* Aksen terang */
-  --yellow:      #f5e642;   /* Tombol & aksen utama */
-  --yellow-dark: #d4c81a;   /* Hover kuning */
+  --teal:        #2b6475;  
+  --teal-dark:   #1d4a58;  
+  --teal-light:  #3a7f94;  
+  --yellow:      #f5e642;  
+  --yellow-dark: #d4c81a;   
   --dark:        #111827;
   --dark2:       #1f2937;
   --gray:        #6b7280;
   --gray-light:  #f3f4f6;
   --white:       #ffffff;
 
-  /* ✏️ EDIT: Font — ubah juga di link Google Fonts di <head> HTML */
   --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
   --font-body:    'Plus Jakarta Sans', system-ui, sans-serif;
 
@@ -28,7 +21,6 @@
   --transition: .3s cubic-bezier(.4,0,.2,1);
 }
 
-/* ── RESET ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
 body { font-family: var(--font-body); color: var(--dark); background: var(--white); overflow-x: hidden; }
@@ -38,13 +30,11 @@ ul { list-style: none; }
 select, input, textarea { font-family: inherit; font-size: 1rem; border: none; outline: none; background: transparent; }
 button { cursor: pointer; border: none; background: none; font-family: inherit; }
 
-/* ── UTILITIES ── */
 .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 .section { padding: 96px 0; }
 .hidden { display: none !important; }
 .full-w { width: 100%; text-align: center; }
 
-/* ── BUTTONS ── */
 .btn-primary {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   background: var(--yellow); color: var(--dark);
@@ -64,7 +54,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .btn-outline:hover { background: var(--teal); color: var(--white); }
 
-/* ── SECTION HEADER ── */
 .section-header {
   display: flex; align-items: flex-end; justify-content: space-between;
   margin-bottom: 48px; gap: 16px; flex-wrap: wrap;
@@ -81,16 +70,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .body-text { color: var(--gray); line-height: 1.75; margin-bottom: 16px; }
 
-/* ── REVEAL ANIMATION ── */
 .reveal { opacity: 0; transform: translateY(32px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.visible { opacity: 1; transform: none; }
 .delay-1 { transition-delay: .1s; }
 .delay-2 { transition-delay: .2s; }
 .delay-3 { transition-delay: .3s; }
 
-/* ============================================================
-   NAVBAR
-   ============================================================ */
+
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
   padding: 20px 0;
@@ -137,16 +123,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .nav-cta { font-size: .9rem; padding: 10px 20px; }
 
-/* Hamburger */
 .hamburger { display: none; flex-direction: column; gap: 5px; padding: 4px; }
 .hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: var(--transition); }
 .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ============================================================
-   HERO
-   ============================================================ */
 .hero {
   position: relative; min-height: 100vh;
   display: flex; align-items: center;
@@ -155,7 +137,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .hero-bg {
   position: absolute; inset: 0;
   background-size: cover; background-position: center;
-  /* ✏️ EDIT: Jika tidak ada gambar, warna fallback di bawah */
   background-color: var(--teal);
   transform: scale(1.05);
   animation: heroZoom 12s ease-in-out infinite alternate;
@@ -202,7 +183,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: 40px;
 }
 
-/* Search Box */
 .search-box {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -242,7 +222,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .search-btn { flex-shrink: 0; white-space: nowrap; }
 
-/* Hero shape */
 .hero-shape {
   position: absolute; right: -80px; bottom: -80px;
   width: 500px; height: 500px; border-radius: 50%;
@@ -250,9 +229,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   pointer-events: none;
 }
 
-/* ============================================================
-   STATS BAR
-   ============================================================ */
 .stats-bar { padding: 40px 0; background: var(--gray-light); }
 .stats-inner {
   display: flex; align-items: center; justify-content: space-around;
@@ -267,9 +243,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .stat p { font-size: .85rem; color: var(--gray); margin-top: 4px; }
 .stat-divider { width: 1px; height: 48px; background: #d1d5db; }
 
-/* ============================================================
-   LISTINGS
-   ============================================================ */
 .listings { background: var(--white); }
 .listings-grid {
   display: grid;
@@ -319,9 +292,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .card-price { font-size: 1.2rem; font-weight: 700; color: var(--teal); }
 .card-specs { display: flex; gap: 12px; font-size: .78rem; color: var(--gray); flex-wrap: wrap; }
 
-/* ============================================================
-   ABOUT
-   ============================================================ */
 .about { background: var(--gray-light); }
 .about-grid {
   display: grid; grid-template-columns: 1fr 1fr;
@@ -353,9 +323,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .feature-item strong { font-size: .95rem; display: block; margin-bottom: 3px; }
 .feature-item p { font-size: .85rem; color: var(--gray); line-height: 1.5; }
 
-/* ============================================================
-   SPECIFICATIONS
-   ============================================================ */
+
 .specs { background: var(--white); }
 .spec-tabs {
   display: flex; gap: 8px; flex-wrap: wrap;
@@ -410,9 +378,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: 6px 14px; font-size: .8rem; font-weight: 500;
 }
 
-/* ============================================================
-   PRICING
-   ============================================================ */
 .pricing { background: var(--gray-light); }
 .price-tabs { display: flex; gap: 4px; }
 .price-grid {
@@ -445,9 +410,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .price-features { display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; }
 .price-features li { font-size: .88rem; color: var(--gray); }
 
-/* ============================================================
-   TESTIMONIALS
-   ============================================================ */
+
 .testimonials { background: var(--white); }
 .testi-slider {
   display: grid;
@@ -471,9 +434,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .testi-user strong { font-size: .9rem; display: block; }
 .testi-user span { font-size: .8rem; color: var(--gray); }
 
-/* ============================================================
-   CONTACT
-   ============================================================ */
+
 .contact { background: var(--teal); }
 .contact .section-eyebrow { color: var(--yellow); }
 .contact .section-title { color: var(--white); }
@@ -500,7 +461,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .social-btn:hover { background: var(--yellow); border-color: var(--yellow); }
 .social-btn:hover svg { color: var(--dark); }
 
-/* Form */
 .contact-form {
   background: var(--white); border-radius: var(--radius-lg);
   padding: 36px; box-shadow: var(--shadow-lg);
@@ -524,9 +484,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .form-note.success { color: #16a34a; }
 .form-note.error { color: #dc2626; }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
+
 .footer { background: var(--dark); padding: 64px 0 0; }
 .footer-inner {
   display: grid;
@@ -548,9 +506,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .footer-bottom p { font-size: .82rem; color: rgba(255,255,255,.35); }
 
-/* ============================================================
-   BACK TO TOP
-   ============================================================ */
+
 .back-top {
   position: fixed; bottom: 28px; right: 28px; z-index: 999;
   width: 44px; height: 44px; border-radius: 50%;
@@ -562,11 +518,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .back-top.visible { opacity: 1; pointer-events: auto; }
 .back-top:hover { background: var(--teal-dark); transform: translateY(-3px); }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
-
-/* Tablet */
 @media (max-width: 1024px) {
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .about-images { max-width: 560px; }
@@ -577,11 +528,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .spec-image img { height: 280px; }
 }
 
-/* Mobile Large */
 @media (max-width: 768px) {
   .section { padding: 64px 0; }
 
-  /* Navbar mobile */
   .hamburger { display: flex; }
   .nav-cta { display: none; }
   .nav-links {
@@ -597,42 +546,32 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .nav-link::after { display: none; }
   .navbar.scrolled .nav-link { color: var(--white); }
 
-  /* Hero */
   .hero-content { padding: 120px 24px 64px; }
   .search-fields { flex-direction: column; }
   .search-field { min-width: 100%; }
   .search-btn { width: 100%; }
 
-  /* Stats */
   .stats-inner { gap: 16px; }
   .stat-divider { display: none; }
 
-  /* Listings */
   .listings-grid { grid-template-columns: 1fr; }
 
-  /* About */
   .about-main-img { height: 320px; }
   .about-float-card { display: none; }
 
-  /* Spec */
   .spec-tabs { gap: 4px; }
   .spec-tab { padding: 10px 16px; font-size: .82rem; }
 
-  /* Price */
   .price-grid { grid-template-columns: 1fr; }
   .section-header { flex-direction: column; align-items: flex-start; }
 
-  /* Testi */
   .testi-slider { grid-template-columns: 1fr; }
 
-  /* Contact */
   .form-row { grid-template-columns: 1fr; }
 
-  /* Footer */
   .footer-inner { grid-template-columns: 1fr; }
 }
 
-/* Mobile Small */
 @media (max-width: 480px) {
   .hero-title { font-size: 2rem; }
   .search-box { padding: 16px; }
@@ -642,8 +581,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .back-top { bottom: 16px; right: 16px; }
 }
 
-/* ── Placeholder image fallback (jika gambar belum ada) ── */
 img[src*="images/"]  {
   background: linear-gradient(135deg, var(--teal) 0%, var(--teal-light) 100%);
-  /* Jika file gambar tidak ditemukan, tetap tampilkan placeholder berwarna */
 }
