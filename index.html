@@ -11,12 +11,8 @@
 </head>
 <body>
 
-  <!-- ============================================================
-       NAVIGATION
-  ============================================================ -->
   <header class="navbar" id="navbar">
     <div class="container nav-inner">
-      <!-- ✏️ EDIT: Ganti teks logo di bawah -->
       <a href="#beranda" class="logo">Hunian</a>
 
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -35,17 +31,12 @@
     </div>
   </header>
 
-  <!-- ============================================================
-       HERO — #beranda
-  ============================================================ -->
   <section class="hero" id="beranda">
-    <!-- ✏️ EDIT: Ganti URL gambar hero di bawah (style="background-image:...") -->
     <div class="hero-bg" style="background-image: url('images/hero-bg.jpg')"></div>
     <div class="hero-overlay"></div>
 
     <div class="container hero-content">
       <div class="hero-badge reveal">
-        <!-- ✏️ EDIT: Ganti angka & teks badge -->
         <div class="badge-avatars">
           <img src="images/avatar1.jpg" alt="User 1" />
           <img src="images/avatar2.jpg" alt="User 2" />
@@ -57,27 +48,20 @@
         </div>
       </div>
 
-      <!-- ✏️ EDIT: Judul utama -->
       <h1 class="hero-title reveal delay-1">
         Temukan Properti<br />Impian Anda
       </h1>
 
-      <!-- ✏️ EDIT: Subjudul / deskripsi singkat -->
       <p class="hero-sub reveal delay-2">
         Beli, jual, atau sewa properti di seluruh Indonesia. Kami membantu Anda menemukan tempat sempurna — cepat, mudah, dan aman.
       </p>
 
 
-    <!-- Decorative shapes -->
     <div class="hero-shape"></div>
   </section>
 
-  <!-- ============================================================
-       STATS BAR
-  ============================================================ -->
   <section class="stats-bar">
     <div class="container stats-inner">
-      <!-- ✏️ EDIT: Angka & label statistik -->
       <div class="stat reveal">
         <span class="stat-num" data-target="1200">0</span><span>+</span>
         <p>Properti Tersedia</p>
@@ -100,9 +84,6 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       NEW LISTINGS
-  ============================================================ -->
   <section class="listings section" id="listings">
     <div class="container">
       <div class="section-header reveal">
@@ -111,17 +92,14 @@
       </div>
 
       <div class="listings-grid">
-        <!-- ✏️ EDIT: Kartu listing — salin/hapus blok .listing-card untuk tambah properti -->
 
         <div class="listing-card featured reveal delay-1">
-          <!-- ✏️ EDIT: Ganti src gambar -->
           <img src="images/property1.jpg" alt="The New Spring Villa" class="card-img" />
           <div class="card-body">
             <div class="card-top">
               <span class="card-badge">Dijual</span>
               <button class="wishlist-btn" aria-label="Simpan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
             </div>
-            <!-- ✏️ EDIT: Nama, lokasi, harga properti -->
             <h3 class="card-title">The New Spring Villa</h3>
             <p class="card-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Kamawa City</p>
             <div class="card-footer">
@@ -178,24 +156,18 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       TENTANG — #tentang
-  ============================================================ -->
   <section class="about section" id="tentang">
     <div class="container about-grid">
       <div class="about-images reveal">
-        <!-- ✏️ EDIT: Ganti src gambar tentang -->
         <img src="images/about-main.jpg" alt="About Kala" class="about-main-img" />
         <div class="about-float-card">
           <div class="float-icon">🏆</div>
-          <!-- ✏️ EDIT: Penghargaan/pencapaian -->
           <strong>Agen Terbaik 2024</strong>
           <span>Penghargaan Properti Nasional</span>
         </div>
       </div>
       <div class="about-text reveal delay-2">
         <p class="section-eyebrow">Tentang Kami</p>
-        <!-- ✏️ EDIT: Judul & deskripsi tentang perusahaan -->
         <h2 class="section-title">Mitra Terpercaya dalam Dunia Properti</h2>
         <p class="body-text">
           Kala hadir sejak 2010 dengan misi sederhana: membantu setiap orang menemukan rumah yang tepat dengan cara yang lebih mudah dan transparan. Kami menghubungkan pembeli, penjual, dan penyewa di seluruh Indonesia melalui platform digital yang andal.
@@ -204,7 +176,6 @@
           Tim kami terdiri dari para profesional properti berpengalaman yang siap memandu Anda dari pencarian hingga serah terima kunci.
         </p>
         <div class="about-features">
-          <!-- ✏️ EDIT: Fitur/keunggulan — tambah atau hapus item -->
           <div class="feature-item">
             <div class="feature-icon">✓</div>
             <div>
@@ -232,28 +203,21 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       SPESIFIKASI — #spesifikasi
-  ============================================================ -->
   <section class="specs section" id="spesifikasi">
     <div class="container">
       <div class="section-header reveal">
         <div>
           <p class="section-eyebrow">Spesifikasi</p>
-          <!-- ✏️ EDIT: Judul spesifikasi -->
           <h2 class="section-title">Detail Lengkap Properti</h2>
         </div>
       </div>
 
-      <!-- SPEC TABS -->
       <div class="spec-tabs reveal">
-        <!-- ✏️ EDIT: Ganti nama properti di tab -->
         <button class="spec-tab active" data-spec="villa">Spring Villa</button>
         <button class="spec-tab" data-spec="riverside">River Side</button>
         <button class="spec-tab" data-spec="lily">Lily Residence</button>
       </div>
 
-      <!-- ✏️ EDIT: Ubah isi spesifikasi per properti di bawah -->
 
       <div class="spec-panel active" id="spec-villa">
         <div class="spec-grid">
@@ -350,9 +314,6 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       HARGA — #harga
-  ============================================================ -->
   <section class="pricing section" id="harga">
     <div class="container">
       <div class="section-header reveal">
@@ -366,7 +327,6 @@
         </div>
       </div>
 
-      <!-- ✏️ EDIT: Kartu harga — salin/hapus blok .price-card -->
       <div class="price-grid" id="price-beli">
 
         <div class="price-card reveal delay-1">
@@ -375,7 +335,6 @@
             <span class="price-badge">Populer</span>
           </div>
           <div class="price-body">
-            <!-- ✏️ EDIT: Nama, lokasi, harga -->
             <h3>Lily Residence</h3>
             <p class="price-loc">📍 South Harbana</p>
             <div class="price-num">Rp 4,70 M</div>
@@ -440,7 +399,6 @@
           <div class="price-body">
             <h3>Lily Residence</h3>
             <p class="price-loc">📍 South Harbana</p>
-            <!-- ✏️ EDIT: Harga sewa -->
             <div class="price-num">Rp 25 Jt<span class="per">/tahun</span></div>
             <ul class="price-features">
               <li>✓ 3 Kamar Tidur</li>
@@ -490,9 +448,6 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       TESTIMONIAL
-  ============================================================ -->
   <section class="testimonials section">
     <div class="container">
       <div class="section-header reveal">
@@ -502,12 +457,10 @@
         </div>
       </div>
       <div class="testi-slider" id="testiSlider">
-        <!-- ✏️ EDIT: Testimoni — salin/hapus blok .testi-card -->
         <div class="testi-card reveal delay-1">
           <div class="stars">★★★★★</div>
           <p>"Proses pembelian sangat mudah dan transparan. Tim Kala sangat membantu dari awal hingga serah terima kunci. Sangat direkomendasikan!"</p>
           <div class="testi-user">
-            <!-- ✏️ EDIT: Foto & nama pelanggan -->
             <img src="images/avatar1.jpg" alt="Budi" />
             <div>
               <strong>Budi Santoso</strong>
@@ -541,9 +494,6 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       KONTAK — #kontak
-  ============================================================ -->
   <section class="contact section" id="kontak">
     <div class="container contact-grid">
       <div class="contact-info reveal">
@@ -551,7 +501,6 @@
         <h2 class="section-title">Hubungi Kami</h2>
         <p class="body-text">Punya pertanyaan atau ingin konsultasi properti? Tim kami siap membantu Anda kapan saja.</p>
 
-        <!-- ✏️ EDIT: Info kontak perusahaan -->
         <div class="contact-items">
           <div class="contact-item">
             <div class="contact-icon">📍</div>
@@ -564,7 +513,6 @@
             <div class="contact-icon">📞</div>
             <div>
               <strong>Telepon</strong>
-              <!-- ✏️ EDIT: Nomor telepon -->
               <p><a href="tel:+628001234567">+62 800 1234 567</a></p>
             </div>
           </div>
@@ -572,7 +520,6 @@
             <div class="contact-icon">✉️</div>
             <div>
               <strong>Email</strong>
-              <!-- ✏️ EDIT: Alamat email -->
               <p><a href="mailto:halo@kala.id">halo@kala.id</a></p>
             </div>
           </div>
@@ -580,13 +527,11 @@
             <div class="contact-icon">🕐</div>
             <div>
               <strong>Jam Operasional</strong>
-              <!-- ✏️ EDIT: Jam operasional -->
               <p>Senin – Sabtu: 08.00 – 18.00 WIB</p>
             </div>
           </div>
         </div>
 
-        <!-- ✏️ EDIT: Link media sosial -->
         <div class="social-links">
           <a href="#" class="social-btn" aria-label="Instagram">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
@@ -600,10 +545,8 @@
         </div>
       </div>
 
-      <!-- FORM KONTAK -->
       <div class="contact-form reveal delay-2">
         <h3>Kirim Pesan</h3>
-        <!-- ✏️ EDIT: Untuk menghubungkan form ke backend/email, ubah action di bawah atau integrasikan dengan Formspree / EmailJS -->
         <div class="form-row">
           <div class="form-group">
             <label>Nama Lengkap</label>
@@ -638,13 +581,9 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       FOOTER
-  ============================================================ -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <!-- ✏️ EDIT: Logo & deskripsi footer -->
         <a href="#beranda" class="logo">Kala</a>
         <p>Mitra terpercaya untuk properti impian Anda di seluruh Indonesia.</p>
         <div class="social-links">
@@ -667,7 +606,6 @@
 
       <div class="footer-links">
         <h4>Properti</h4>
-        <!-- ✏️ EDIT: Daftar tipe properti -->
         <ul>
           <li><a href="#harga">Rumah Dijual</a></li>
           <li><a href="#harga">Apartemen</a></li>
@@ -679,7 +617,6 @@
 
       <div class="footer-links">
         <h4>Kontak</h4>
-        <!-- ✏️ EDIT: Info kontak footer -->
         <ul>
           <li>📍 Jl. Sudirman No. 88, Jakarta</li>
           <li>📞 +62 800 1234 567</li>
@@ -687,13 +624,11 @@
         </ul>
       </div>
     </div>
-    <!-- ✏️ EDIT: Tahun & nama perusahaan -->
     <div class="footer-bottom">
       <p>© 2025 Kala Real Estate. Seluruh hak cipta dilindungi.</p>
     </div>
   </footer>
 
-  <!-- Back to top -->
   <button class="back-top" id="backTop" aria-label="Kembali ke atas">↑</button>
 
   <script src="script.js"></script>
